@@ -1,5 +1,9 @@
 <template>
-  <h2>Webpack</h2>
+  <div>
+    <h2>Webpack</h2>
+    <router-link to="/login">登录页</router-link>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
