@@ -4,5 +4,16 @@ module.exports = {
     output: {
         filename: 'min.js',
         path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    { loader: "style-loader" },
+                    { loader: "css-loader" }
+                ]
+            }
+        ]
     }
 }
