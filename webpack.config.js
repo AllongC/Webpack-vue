@@ -8,6 +8,10 @@ module.exports = {
         filename: 'min.js',
         path: path.resolve(__dirname, 'dist')
     },
+    devtool: 'source-map',
+    devServer: {
+        port: '8080',
+    },
     module: {
         rules: [
             {
